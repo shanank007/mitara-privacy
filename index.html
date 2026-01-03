@@ -685,7 +685,23 @@
                 <a href="http://privacy.mitaraai.com" style="color: #4A90E2;">Privacy</a> |
                 <a href="mailto:support@mitaraai.com" style="color: #4A90E2;">Support</a>
             </p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
+                Total Visits: <span id="visit-counter" style="color: #4A90E2; font-weight: 600;">...</span>
+            </p>
         </div>
     </footer>
+
+    <script>
+        // Visit counter using CountAPI
+        fetch('https://api.countapi.xyz/hit/mitaraai.com/homepage')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visit-counter').textContent = data.value.toLocaleString();
+            })
+            .catch(error => {
+                console.error('Error fetching visit count:', error);
+                document.getElementById('visit-counter').textContent = 'N/A';
+            });
+    </script>
 </body>
 </html>
