@@ -692,11 +692,11 @@
     </footer>
 
     <script>
-        // Visit counter using CountAPI
-        fetch('https://api.countapi.xyz/hit/mitaraai.com/homepage')
+        // Visit counter using CountAPI by Miles Hilliard
+        fetch('https://countapi.mileshilliard.com/api/v1/hit/mitaraai-homepage-visits')
             .then(response => response.json())
             .then(data => {
-                document.getElementById('visit-counter').textContent = data.value.toLocaleString();
+                document.getElementById('visit-counter').textContent = parseInt(data.value).toLocaleString();
             })
             .catch(error => {
                 console.error('Error fetching visit count:', error);
