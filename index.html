@@ -520,41 +520,28 @@
 
             <div class="screenshots-grid">
                 <div class="screenshot-item">
-                    <img src="assets/v1.0.6/1-dashboard.png" alt="Dashboard" class="screenshot-img">
+                    <img src="apps/mobile/assets/screenshots/v1.0.6/1-dashboard.png" alt="Dashboard" class="screenshot-img">
                     <h3>Smart Dashboard</h3>
                     <p>Track your daily progress at a glance with intuitive charts and insights</p>
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="assets/v1.0.6/2-food-analysis.png" alt="AI Food Analysis" class="screenshot-img">
+                    <img src="apps/mobile/assets/screenshots/v1.0.6/2-food-analysis.png" alt="AI Food Analysis" class="screenshot-img">
                     <h3>AI Food Analysis</h3>
                     <p>Snap a photo and get instant nutritional breakdown powered by AI</p>
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="assets/v1.0.6/3-create-plan.png" alt="Personalized Plans" class="screenshot-img">
+                    <img src="apps/mobile/assets/screenshots/v1.0.6/3-create-plan.png" alt="Personalized Plans" class="screenshot-img">
                     <h3>Custom Plans</h3>
                     <p>Create meal and fitness plans tailored to your unique goals</p>
                 </div>
 
                 <div class="screenshot-item">
-                    <img src="assets/v1.0.6/4-educational-videos.png" alt="Educational Videos" class="screenshot-img">
+                    <img src="apps/mobile/assets/screenshots/v1.0.6/4-educational-videos.png" alt="Educational Videos" class="screenshot-img">
                     <h3>Learn & Grow</h3>
                     <p>Access expert videos on nutrition, fitness, and healthy living</p>
                 </div>
-
-                <div class="screenshot-item">
-                    <img src="assets/v1.0.6/5-analytics.png" alt="Analytics" class="screenshot-img">
-                    <h3>Smart Analytics</h3>
-                    <p>Dive deep into your weekly and monthly analytics with intuitive charts and insights</p>
-                </div>
-
-                <div class="screenshot-item">
-                    <img src="assets/v1.0.6/6-voice.png" alt="Voice Logging" class="screenshot-img">
-                    <h3>AI Powered Voice Logging</h3>
-                    <p>Use your voice to log foods using AI's power to identify nutrition</p>
-                </div>
-        
             </div>
         </div>
     </section>
@@ -626,14 +613,14 @@
         <h2>Ready to Transform Your Health?</h2>
         <p>Download Mitara.AI today and start your journey to a healthier you</p>
         <div class="store-badges">
-            <a href="https://apps.apple.com/us/app/mitara-ai/id6756859746" class="store-badge" target="_blank">
+            <a href="https://apps.apple.com/app/mitara-ai" class="store-badge" target="_blank">
                 <span class="store-icon">🍎</span>
                 <div>
                     <div style="font-size: 0.8em; opacity: 0.7;">Download on the</div>
                     <div>App Store</div>
                 </div>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.mitara.ai" class="store-badge" target="_blank">
+            <a href="https://play.google.com/store/apps/mitara-ai" class="store-badge" target="_blank">
                 <span class="store-icon">📱</span>
                 <div>
                     <div style="font-size: 0.8em; opacity: 0.7;">Get it on</div>
@@ -678,30 +665,14 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 Mitara.AI. All rights reserved.</p>
+            <p>© 2026 Mitara.AI. All rights reserved.</p>
             <p style="margin-top: 10px; font-size: 0.9em;">
                 <a href="http://www.mitaraai.com" style="color: #4A90E2;">Home</a> |
                 <a href="http://terms.mitaraai.com" style="color: #4A90E2;">Terms</a> |
                 <a href="http://privacy.mitaraai.com" style="color: #4A90E2;">Privacy</a> |
                 <a href="mailto:support@mitaraai.com" style="color: #4A90E2;">Support</a>
             </p>
-            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
-                Total Visits: <span id="visit-counter" style="color: #4A90E2; font-weight: 600;">...</span>
-            </p>
         </div>
     </footer>
-
-    <script>
-        // Visit counter using CountAPI by Miles Hilliard
-        fetch('https://countapi.mileshilliard.com/api/v1/hit/mitaraai-homepage-visits')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('visit-counter').textContent = parseInt(data.value).toLocaleString();
-            })
-            .catch(error => {
-                console.error('Error fetching visit count:', error);
-                document.getElementById('visit-counter').textContent = 'N/A';
-            });
-    </script>
 </body>
 </html>
